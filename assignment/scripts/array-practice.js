@@ -85,20 +85,25 @@ console.log('The foods are now', favoriteFoods);
 // 4.e (STRETCH) TODO: Replace the second food in your array
 //      with another one of your favorite foods.
 //      Then log the updated array.
-favoriteFoods[1] = ('mango');
-console.log('Added new item to array: ', favoriteFoods[1]);
-console.log('The foods are now', favoriteFoods);
+
+favoriteFoods[1] = ('mango'); // replace the second in array with mango
+console.log('Added new item to array: ', favoriteFoods[1]); //verify that second item is mango
+console.log('The foods are now', favoriteFoods); //print new foods array
 
 
 // 4.f (STRETCH) TODO: Sort your favoriteFoods array
 //     in reverse alphabetical order. Log the array.
-console.log('Favorite Foods in order: ', favoriteFoods.sort());
-console.log('Favorite Foods in reverse order: ', favoriteFoods.reverse());
+
+console.log('Favorite Foods in order: ', favoriteFoods.sort()); // sort the favorite foods array in alphabetical order
+console.log('Favorite Foods in reverse order: ', favoriteFoods.reverse()); // now reverse the sorted foods array
 
 // 4.g (STRETCH) TODO: Convert your array to a string
 //     putting the word "and" between each item.
 //     eg "tacos and pizza and pasta". Log the string.
-foods = favoriteFoods.join([separator = ' and '])
+
+// not exactly sure how this one works, but was able to join food array with join function and add "and" to sepereate them
+
+foods = favoriteFoods.join([separator = ' and ']) 
 console.log (foods);
 
 // 4.h (STRETCH) TODO: Make a new array that combines 
@@ -107,5 +112,7 @@ console.log (foods);
 //     It should look something like:
 //     ['pizza', 'pasta', 'fish', 'cat', 'bird', 'dog']
 
+// Create new array that uses "+" operation to join the two arrays, 
+// also added comma to seprate
 animalsFoods = animalArray + ',' + favoriteFoods;
-console.log(animalsFoods);
+console.log(animalsFoods); //print new array
